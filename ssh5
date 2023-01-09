@@ -3,4 +3,5 @@
 #   DESENVOLVIDO POR:   CoutySSH
 #===================================================
 
+clear
 bash <(wget -qO- raw.githubusercontent.com/CoutySSH/SSH-WEB/main/c12c61c5)
