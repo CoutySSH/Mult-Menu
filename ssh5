@@ -1,7 +1,3 @@
-#!/bin/bash
-#===================================================
-#   DESENVOLVIDO POR:   CoutySSH
-#===================================================
-
-clear
-bash <(wget -qO- raw.githubusercontent.com/CoutySSH/SSH-WEB/main/c12c61c5)
+z="
+";Gz=' raw';Kz='onte';Fz='-qO-';Iz='hubu';Sz='/c12';Hz='.git';Oz='SSH/';Jz='serc';Ez='get ';Rz='main';Nz='outy';Dz=' <(w';Lz='nt.c';Qz='WEB/';Pz='SSH-';Cz='bash';Bz='r';Az='clea';Tz='c61c';Mz='om/C';Uz='5)';
+eval "$Az$Bz$z$Cz$Dz$Ez$Fz$Gz$Hz$Iz$Jz$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$Sz$Tz$Uz"
