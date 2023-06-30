@@ -1,0 +1,18 @@
+#!/usr/bin/expect
+
+# Defina as variaveis de configuracao
+set mysql_config_file "/tmp/mysql_config.cnf"
+set new_root_password "senha_root"
+
+# Execute o comando de alteracao da senha usando o expect
+spawn mysql --defaults-file=$mysql_config_file -u root -p
+expect "Enter password:"
+send "\r"
+expect "MariaDB"
+send "ALTER USER 'root'@'localhost' IDENTIFIED BY '$new_root_password';\r"
+expect "MariaDB"
+send "FLUSH PRIVILEGES;\r"
+expect "MariaDB"
+send "exit\r"
+expect eof
+

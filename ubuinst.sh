@@ -40,11 +40,11 @@ function inst_base
 	mv composer.phar /usr/local/bin/composer
 	chmod +x /usr/local/bin/composer
 	cd /var/www/html || exit
-	wget https://raw.githubusercontent.com/CoutySSH/SSH-WEB/main/gestorssh.zip > /dev/null 2>&1
+	wget https://github.com/CoutySSH/imagens-png/blob/main/gestorssh18.zip > /dev/null 2>&1
 	apt-get install unzip > /dev/null 2>&1
-	unzip gestorssh.zip > /dev/null 2>&1
+	unzip gestorssh18.zip > /dev/null 2>&1
 	chmod -R 777 /var/www/html
-	rm gestorssh.zip index.html > /dev/null 2>&1
+	rm gestorssh18.zip index.html > /dev/null 2>&1
 	(echo yes; echo yes; echo yes; echo yes) | composer install > /dev/null 2>&1
 	(echo yes; echo yes; echo yes; echo yes) | composer require phpseclib/phpseclib:~2.0 > /dev/null 2>&1
 	systemctl restart mysql
@@ -100,7 +100,7 @@ function pconf
 function inst_db 
 { 
 	cd || exit
-	wget https://github.com//alian87/psshplus/raw/main3/gestorssh/bdgestorssh.sql > /dev/null 2>&1
+	wget https://github.com/CoutySSH/imagens-png/blob/main/bdgestorssh.sql > /dev/null 2>&1
 	sleep 1
 	if [[ -e "$HOME/bdgestorssh.sql" ]]; then
 		mysql -h localhost -u root -p"$pwdroot" --default_character_set utf8 sshplus < bdgestorssh.sql
@@ -148,8 +148,8 @@ function fun_swap
 function tst_bkp
 {
 	cd /bin || exit
-	wget https://github.com//alian87/psshplus/raw/main3/gestorssh/userteste.sh > /dev/null 2>&1
-	wget https://github.com//alian87/psshplus/raw/main3/gestorssh/autobackup.sh > /dev/null 2>&1
+	wget https://github.com/CoutySSH/imagens-png/blob/main/userteste.sh > /dev/null 2>&1
+	wget https://github.com/CoutySSH/imagens-png/blob/main/autobackup.sh > /dev/null 2>&1
 	chmod 777 /bin/userteste.sh > /dev/null 2>&1
 	chmod 777 /bin/autobackup.sh > /dev/null 2>&1
 	mkdir /root/backupsql > /dev/null 2>&1
@@ -163,9 +163,9 @@ echo "America/Sao_Paulo" > /etc/timezone
 ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime > /dev/null 2>&1
 dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
 clear
-echo -e "\E[44;1;37m    INSTALAR PAINELWEB SWIT-T     \E[0m" 
+echo -e "\E[44;1;37m    INSTALAR PAINEL WEB FREE     \E[0m" 
 echo ""
-echo -e "                 \033[1;31mBy @swittecnologia\033[1;36m"
+echo -e "                 \033[1;31mBy @Couty_SSH\033[1;36m"
 echo ""
 read -p "DIGITE SUA SENHA ROOT: " pwdroot
 echo "root:$pwdroot" | chpasswd
@@ -173,7 +173,7 @@ echo -e "\n\033[1;36mINICIANDO INSTALAÇÃO \033[1;33mAGUARDE..."
 sleep 6
 clear
 echo "INSTALANDO DEPENDÊNCIAS"
-echo "..."
+echo "Aguarde Querida..."
 sleep 2
 inst_base
 phpmadm
@@ -183,26 +183,24 @@ cron_set
 fun_swap
 tst_bkp
 clear
-echo -e "\033[1;32m P-SWIT-T INSTALADO COM SUCESSO!"
+echo -e "\033[1;32m PAINEL WEB INSTALADO COM SUCESSO!"
 echo ""
-echo -e "                 \033[1;31mBy @swittecnologia\033[1;36m"
+echo -e "                 \033[1;31mBy @Couty_SSH \033[1;36m"
 echo ""
-echo -e "\033[1;36m SEU PAINEL:\033[1;37m http://$IP/admin\033[0m"
+echo -e "\033[1;36m SEU PAINEL:\033[1;37m http://$IP/\033[0m"
 echo -e "\033[1;36m USUÁRIO:\033[1;37m admin\033[0m"
 echo -e "\033[1;36m SENHA:\033[1;37m admin\033[0m"
-echo ""
-echo -e "\033[1;36m LOJA DE APPS:\033[1;37m http://$IP/apps\033[0m"
 echo ""
 echo -e "\033[1;36m LOJA DE APPS:\033[1;37m http://$IP/phpmyadmin\033[0m"
 echo -e "\033[1;36m USUÁRIO:\033[1;37m root\033[0m"
 echo -e "\033[1;36m SENHA:\033[1;37m $pwdroot\033[0m"
 echo ""
-echo -e "\033[1;33m MAIS INFORMAÇÕES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@swittecnologia\033[0m"
+echo -e "\033[1;33m MAIS INFORMAÇÕES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@Couty_SSH \033[0m"
 echo ""
 sed -i "s;upload_max_filesize = 2M;upload_max_filesize = 64M;g" /etc/php/7.2/apache2/php.ini > /dev/null 2>&1
 sed -i "s;post_max_size = 8M;post_max_size = 64M;g" /etc/php/7.2/apache2/php.ini > /dev/null 2>&1
-echo -e "\033[1;36m REINICIANDO\033[1;37m EM 20 SEGUNDOS\033[0m"
-sleep 20
+echo -e "\033[1;36m REINICIANDO\033[1;37m EM 10 SEGUNDOS\033[0m"
+sleep 10
 shutdown -r now
 cat /dev/null > ~/.bash_history && history -c
 clear
