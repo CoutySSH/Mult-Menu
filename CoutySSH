@@ -265,6 +265,8 @@ echo "America/Sao_Paulo" > /etc/timezone
 ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime > /dev/null 2>&1
 dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
 clear
+
+echo -e "Painel PW WEB" | figlet | boxes -d stone -p a0v0 | lolcat
 echo -e "\033[1;37m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\033[1;37m┃                       \033[38;5;118mPAINEL \033[38;5;190mWEB\033[38;5;197m-\033[38;5;164mCouty\033[38;5;203mSSH\033[38;5;197m\033[1;37m                      \E[0m"
 echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
