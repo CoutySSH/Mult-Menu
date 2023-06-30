@@ -53,7 +53,7 @@ cd /bin/ppweb || exit
 rm *.sh > /dev/null 2>&1
 wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/install.sh
 wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/install.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/ubuntu18.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/ubuinst.sh > /dev/null 2>&1
 wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/ubu20inst.sh > /dev/null 2>&1
 wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/ubu22inst.sh > /dev/null 2>&1
 wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/senharoot.sh > /dev/null 2>&1
