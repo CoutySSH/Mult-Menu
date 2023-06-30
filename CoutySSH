@@ -45,25 +45,25 @@ fun_atpweb () {
     rm /bin/CoutySSH > /dev/null 2>&1
     sleep 5
     cd /bin || exit
-    wget https://raw.githubusercontent.com/alian87/psshplus/main3/gestorssh/pweb > /dev/null 2>&1
+    wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/CoutySSH > /dev/null 2>&1
     chmod 777 CoutySSH > /dev/null 2>&1
     clear
     mkdir /bin/ppweb > /dev/null 2>&1
 cd /bin/ppweb || exit
 rm *.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/alian87/psshplus/main3/gestorssh/install.sh
-wget https://raw.githubusercontent.com/alian87/psshplus/main3/gestorssh/install.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/alian87/psshplus/main3/gestorssh/ubuinst.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/alian87/psshplus/main3/gestorssh/ubu20inst.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/alian87/psshplus/main3/gestorssh/ubu22inst.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/alian87/psshplus/main3/gestorssh/senharoot.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/alian87/psshplus/main3/gestorssh/restbanco.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/alian87/psshplus/main3/gestorssh/restbanco18.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/alian87/psshplus/main3/gestorssh/empresa.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/alian87/psshplus/main3/gestorssh/updatepainel.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/alian87/psshplus/main3/gestorssh/updatepainel18.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/alian87/psshplus/main3/gestorssh/updatepainelarm.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/alian87/psshplus/main3/gestorssh/updatepainelarm18.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/install.sh
+wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/install.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/ubuinst.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/ubu20inst.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/ubu22inst.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/senharoot.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/restbanco.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/restbanco18.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/empresa.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/updatepainel.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/updatepainel18.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/updatepainelarm.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutySSH/imagens-png/main/updatepainelarm18.sh > /dev/null 2>&1
 chmod 777 *.sh > /dev/null 2>&1
 clear
 }
