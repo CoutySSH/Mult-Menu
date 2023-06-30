@@ -3,14 +3,6 @@
 
 function inst_base 
 {
-	clear
-	echo "America/Sao_Paulo" > /etc/timezone
-	ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime > /dev/null 2>&1
-	dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
-	clear
-	echo -e "\E[44;1;37m    INSTALAR PAINEL WEB CoutySSH     \E[0m" 
-	echo ""
-	clear
 	apt update > /dev/null 2>&1
 	apt dist-upgrade -y > /dev/null 2>&1
 	apt install apache2 -y > /dev/null 2>&1
@@ -171,14 +163,14 @@ echo "America/Sao_Paulo" > /etc/timezone
 ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime > /dev/null 2>&1
 dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
 clear
-echo -e "\E[44;1;37m    INSTALAR PAINEL WEB CoutySSH    \E[0m" 
+echo -e "\E[44;1;37m    INSTALAR PAINELWEB SWIT-T     \E[0m" 
 echo ""
-echo -e "                 \033[1;31mBy @Couty_SSHG\033[1;36m"
+echo -e "                 \033[1;31mBy @swittecnologia\033[1;36m"
 echo ""
 read -p "DIGITE SUA SENHA ROOT: " pwdroot
 echo "root:$pwdroot" | chpasswd
 echo -e "\n\033[1;36mINICIANDO INSTALAÇÃO \033[1;33mAGUARDE..."
-sleep 3
+sleep 6
 clear
 echo "INSTALANDO DEPENDÊNCIAS"
 echo "..."
@@ -191,9 +183,9 @@ cron_set
 fun_swap
 tst_bkp
 clear
-echo -e "\033[1;32m PAINEL WEB CoutySSH INSTALADO COM SUCESSO!"
+echo -e "\033[1;32m P-SWIT-T INSTALADO COM SUCESSO!"
 echo ""
-echo -e "                 \033[1;31mBy @Couty_SSHG\033[1;36m"
+echo -e "                 \033[1;31mBy @swittecnologia\033[1;36m"
 echo ""
 echo -e "\033[1;36m SEU PAINEL:\033[1;37m http://$IP/admin\033[0m"
 echo -e "\033[1;36m USUÁRIO:\033[1;37m admin\033[0m"
@@ -205,7 +197,7 @@ echo -e "\033[1;36m LOJA DE APPS:\033[1;37m http://$IP/phpmyadmin\033[0m"
 echo -e "\033[1;36m USUÁRIO:\033[1;37m root\033[0m"
 echo -e "\033[1;36m SENHA:\033[1;37m $pwdroot\033[0m"
 echo ""
-echo -e "\033[1;33m MAIS INFORMAÇÕES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@Couty_SSHG\033[0m"
+echo -e "\033[1;33m MAIS INFORMAÇÕES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@swittecnologia\033[0m"
 echo ""
 sed -i "s;upload_max_filesize = 2M;upload_max_filesize = 64M;g" /etc/php/7.2/apache2/php.ini > /dev/null 2>&1
 sed -i "s;post_max_size = 8M;post_max_size = 64M;g" /etc/php/7.2/apache2/php.ini > /dev/null 2>&1
